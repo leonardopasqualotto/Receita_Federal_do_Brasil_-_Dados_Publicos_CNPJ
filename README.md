@@ -1,5 +1,5 @@
 # Dados Públicos CNPJ
-- Fonte oficial da Receita Federal do Brasil, [aqui](https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj).
+- Fonte disponível atualizada mensalmente, [aqui](https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-08/)
 - Layout dos arquivos, [aqui](https://www.gov.br/receitafederal/dados/cnpj-metadados.pdf).
 
 A Receita Federal do Brasil disponibiliza bases com os dados públicos do cadastro nacional de pessoas jurídicas (CNPJ).
@@ -8,11 +8,14 @@ De forma geral, nelas constam as mesmas informações que conseguimos ver no car
 
 Nesse repositório consta um processo de ETL para **i)** baixar os arquivos; **ii)** descompactar; **iii)** ler, tratar e **iv)** inserir num banco de dados relacional PostgreSQL.
 
+Após inseridos os dados no banco, podem ser executados os repositórios [backend](https://github.com/leonardopasqualotto/Cnpj-Search-backend) e Frontend do projeto CNPJ-Search!
+
+
 ---------------------
 
 ### Infraestrutura necessária:
 - [Python 3.8](https://www.python.org/downloads/release/python-3810/)
-- [PostgreSQL 14.2](https://www.postgresql.org/download/)
+- [PostgreSQL 16](https://www.postgresql.org/download/)
 
 ---------------------
 
